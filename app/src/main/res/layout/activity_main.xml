@@ -9,70 +9,68 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="pg.androiddrawing.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        android:id="@+id/textView" />
-
     <pg.androiddrawing.DrawingSurface
         android:id="@+id/drawing_surface"
-        android:layout_height="match_parent"
         android:layout_width="match_parent"
-        android:layout_above="@id/drawing_button_group"
-        android:layout_alignParentStart="true"/>
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/drawing_button_group"
+        android:layout_alignParentEnd="true" />
 
     <LinearLayout
         android:id="@+id/drawing_button_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@id/drawing_surface"
 
-        >
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
 
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="New Button"
             android:id="@+id/button"
+            android:layout_width="@dimen/activity_main_color_button_width"
+            android:layout_height="@dimen/activity_main_color_button_height"
+            android:layout_alignEnd="@+id/textView"
             android:layout_alignParentBottom="true"
             android:layout_alignParentStart="true"
-            android:layout_alignEnd="@+id/textView" />
+            android:background="@android:color/holo_red_dark" />
 
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="New Button"
             android:id="@+id/button2"
+            android:layout_width="@dimen/activity_main_color_button_width"
+            android:layout_height="@dimen/activity_main_color_button_height"
             android:layout_alignTop="@+id/button4"
-            android:layout_toEndOf="@+id/button4" />
+            android:layout_toEndOf="@+id/button4"
+            android:background="@android:color/holo_orange_light" />
 
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="New Button"
             android:id="@+id/button3"
-            android:layout_alignTop="@+id/button"
+            android:layout_width="@dimen/activity_main_color_button_width"
+            android:layout_height="@dimen/activity_main_color_button_height"
             android:layout_alignEnd="@+id/button4"
-            android:layout_marginEnd="36dp" />
+            android:layout_alignTop="@+id/button"
+            android:background="@android:color/holo_blue_dark" />
 
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="New Button"
             android:id="@+id/button4"
+            android:layout_width="@dimen/activity_main_color_button_width"
+            android:layout_height="@dimen/activity_main_color_button_height"
             android:layout_below="@+id/drawing_surface"
-            android:layout_toEndOf="@+id/button" />
+            android:layout_toEndOf="@+id/button"
+            android:background="@android:color/holo_green_dark" />
 
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="New Button"
             android:id="@+id/button5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_alignParentBottom="true"
-            android:layout_alignParentEnd="true" />
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:text="x" />
 
     </LinearLayout>
+
+
 
 </RelativeLayout>
