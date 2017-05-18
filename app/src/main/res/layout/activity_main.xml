@@ -10,12 +10,12 @@
     tools:context="pg.androiddrawing.MainActivity">
 
     <pg.androiddrawing.DrawingSurface
-        android:id="@+id/drawing_surface"
+        android:id="@+id/activty_main_drawing_surface"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_alignParentStart="true"
         android:layout_above="@+id/drawing_button_group"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true" />
 
     <LinearLayout
         android:id="@+id/drawing_button_group"
@@ -27,7 +27,7 @@
         android:layout_alignParentStart="true">
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/activity_main_red_button"
             android:layout_width="@dimen/activity_main_color_button_width"
             android:layout_height="@dimen/activity_main_color_button_height"
             android:layout_alignEnd="@+id/textView"
@@ -36,31 +36,31 @@
             android:background="@android:color/holo_red_dark" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/activity_main_yellow_button"
             android:layout_width="@dimen/activity_main_color_button_width"
             android:layout_height="@dimen/activity_main_color_button_height"
-            android:layout_alignTop="@+id/button4"
-            android:layout_toEndOf="@+id/button4"
+            android:layout_alignTop="@+id/activity_main_green_button"
+            android:layout_toEndOf="@+id/activity_main_green_button"
             android:background="@android:color/holo_orange_light" />
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/activity_main_blue_button"
             android:layout_width="@dimen/activity_main_color_button_width"
             android:layout_height="@dimen/activity_main_color_button_height"
-            android:layout_alignEnd="@+id/button4"
-            android:layout_alignTop="@+id/button"
+            android:layout_alignEnd="@+id/activity_main_green_button"
+            android:layout_alignTop="@+id/activity_main_red_button"
             android:background="@android:color/holo_blue_dark" />
 
         <Button
-            android:id="@+id/button4"
+            android:id="@+id/activity_main_green_button"
             android:layout_width="@dimen/activity_main_color_button_width"
             android:layout_height="@dimen/activity_main_color_button_height"
-            android:layout_below="@+id/drawing_surface"
-            android:layout_toEndOf="@+id/button"
+            android:layout_below="@+id/main_activity_drawing_surface"
+            android:layout_toEndOf="@+id/activity_main_red_button"
             android:background="@android:color/holo_green_dark" />
 
         <Button
-            android:id="@+id/button5"
+            android:id="@+id/activity_main_clear_button"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_alignParentBottom="true"
